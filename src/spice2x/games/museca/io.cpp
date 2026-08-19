@@ -1,5 +1,7 @@
 #include "io.h"
 
+uint8_t games::museca::ANALOG_SLOWDOWN_SENS = 3;
+
 std::vector<Button> &games::museca::get_buttons() {
     static std::vector<Button> buttons;
 
