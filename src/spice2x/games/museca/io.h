@@ -1,10 +1,14 @@
 #pragma once
 
+#include <cstdint>
 #include <vector>
 
 #include "cfg/api.h"
 
 namespace games::museca {
+
+    // settings
+    extern uint8_t ANALOG_SLOWDOWN_SENS;
 
     // all buttons in correct order
     namespace Buttons {

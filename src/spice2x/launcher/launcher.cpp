@@ -72,6 +72,7 @@
 #include "games/mfg/mfg.h"
 #include "games/pc/pc.h"
 #include "games/museca/museca.h"
+#include "games/museca/io.h"
 #include "hooks/avshook.h"
 #include "hooks/audio/audio.h"
 #include "hooks/audio/asio_proxy.h"
@@ -773,6 +774,10 @@ int main_implementation(int argc, char *argv[]) {
     }
     if (options[launcher::Options::LoadMusecaModule].value_bool()) {
         attach_museca = true;
+    }
+    if (options[launcher::Options::spice2x_MUSECAAnalogSlowdownSensitivity].is_active()) {
+        games::museca::ANALOG_SLOWDOWN_SENS = (uint8_t)
+            options[launcher::Options::spice2x_MUSECAAnalogSlowdownSensitivity].value_uint32();
     }
     if (options[launcher::Options::DDR43Mode].value_bool()) {
         games::ddr::SDMODE = true;

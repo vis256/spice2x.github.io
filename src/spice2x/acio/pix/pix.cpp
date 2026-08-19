@@ -265,34 +265,34 @@ static bool __cdecl ac_io_pix_rvol_update_control_status_buffer() {
         // update analogs
         static uint8_t analogs[5] = { 0, 0, 0, 0, 0 };
         if (Buttons::getState(RI_MGR, buttons.at(games::museca::Buttons::Disk1Minus))) {
-            analogs[0] -= slowdown ? 3 : 12;
+            analogs[0] -= slowdown ? games::museca::ANALOG_SLOWDOWN_SENS : 12;
         }
         if (Buttons::getState(RI_MGR, buttons.at(games::museca::Buttons::Disk1Plus))) {
-            analogs[0] += slowdown ? 3 : 12;
+            analogs[0] += slowdown ? games::museca::ANALOG_SLOWDOWN_SENS : 12;
         }
         if (Buttons::getState(RI_MGR, buttons.at(games::museca::Buttons::Disk2Minus))) {
-            analogs[1] -= slowdown ? 3 : 12;
+            analogs[1] -= slowdown ? games::museca::ANALOG_SLOWDOWN_SENS : 12;
         }
         if (Buttons::getState(RI_MGR, buttons.at(games::museca::Buttons::Disk2Plus))) {
-            analogs[1] += slowdown ? 3 : 12;
+            analogs[1] += slowdown ? games::museca::ANALOG_SLOWDOWN_SENS : 12;
         }
         if (Buttons::getState(RI_MGR, buttons.at(games::museca::Buttons::Disk3Minus))) {
-            analogs[2] -= slowdown ? 3 : 12;
+            analogs[2] -= slowdown ? games::museca::ANALOG_SLOWDOWN_SENS : 12;
         }
         if (Buttons::getState(RI_MGR, buttons.at(games::museca::Buttons::Disk3Plus))) {
-            analogs[2] += slowdown ? 3 : 12;
+            analogs[2] += slowdown ? games::museca::ANALOG_SLOWDOWN_SENS : 12;
         }
         if (Buttons::getState(RI_MGR, buttons.at(games::museca::Buttons::Disk4Minus))) {
-            analogs[3] -= slowdown ? 3 : 12;
+            analogs[3] -= slowdown ? games::museca::ANALOG_SLOWDOWN_SENS : 12;
         }
         if (Buttons::getState(RI_MGR, buttons.at(games::museca::Buttons::Disk4Plus))) {
-            analogs[3] += slowdown ? 3 : 12;
+            analogs[3] += slowdown ? games::museca::ANALOG_SLOWDOWN_SENS : 12;
         }
         if (Buttons::getState(RI_MGR, buttons.at(games::museca::Buttons::Disk5Minus))) {
-            analogs[4] -= slowdown ? 3 : 12;
+            analogs[4] -= slowdown ? games::museca::ANALOG_SLOWDOWN_SENS : 12;
         }
         if (Buttons::getState(RI_MGR, buttons.at(games::museca::Buttons::Disk5Plus))) {
-            analogs[4] += slowdown ? 3 : 12;
+            analogs[4] += slowdown ? games::museca::ANALOG_SLOWDOWN_SENS : 12;
         }
 
         // raw input analogs

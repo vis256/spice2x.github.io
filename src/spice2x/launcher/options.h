@@ -150,6 +150,7 @@ namespace launcher {
             LoadMFGModule,
             LoadPCModule,
             LoadMusecaModule,
+            spice2x_MUSECAAnalogSlowdownSensitivity,
             PathToModules,
             ScreenshotFolder,
             ConfigurationPath,

@@ -1571,6 +1571,19 @@ static const std::vector<OptionDefinition> OPTION_DEFINITIONS = {
         .category = "Advanced Game Options",
     },
     {
+        // spice2x_MUSECAAnalogSlowdownSensitivity
+        .title = "MUSECA Analog Slowdown Sensitivity",
+        .name = "sp2x-musecaanalogslowdownsens",
+        .display_name = "musecaanalogslowdownsens",
+        .aliases= "musecaanalogslowdownsens",
+        .desc = "Adjust speed of disks while the Analog Slowdown button is held. "
+            "Only affects digital input (buttons); does not affect analog input! Default: 3.",
+        .type = OptionType::Integer,
+        .setting_name = "(0-255)",
+        .game_name = "Museca",
+        .category = "Advanced Game Options",
+    },
+    {
         .title = "Modules Folder Override",
         .name = "modules",
         .desc = "Sets a custom path to the modules folder.",
